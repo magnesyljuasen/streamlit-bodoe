@@ -104,7 +104,7 @@ def create_map(df_position):
             icon_size=(15, 15),
         )
         tooltip_text = f"""
-            {row["profet_bygningstype"]} (<strong>{row["bruksareal_totalt"]:,} m²</strong>)<br>""".replace(
+            {row["profet_bygningstype"]}<br><strong>{row["bruksareal_totalt"]:,} m²</strong>""".replace(
             ",", " "
         )
         return popup_text, tooltip_text, icon
@@ -811,7 +811,7 @@ with st.sidebar:
     with st.expander(" 1 Konfigurering", expanded=False):
         st.write("""Vi har allerede hentet inn bygningsdata fra matrikkelen 
                  for byggene i området samt hentet inn reelle data for fjernvarmen i området.
-                 Det er bygget opp 4 ulike scenarier med ulike variasjoner av 
+                 Det er bygget opp 6 ulike scenarier med ulike variasjoner av 
                  grunnvarme, fjernvarme, solceller og oppgradering av bygningsmassen.""")
     with st.expander(" 2 Tegn ditt utvalg", expanded=True):
         st.write("""Start med å bruke tegneverktøyet øverst til høyre i kartet 
