@@ -823,6 +823,7 @@ with st.sidebar:
                 energiscenarier ved å velge ett alternativ fra venstremenyen. 
                 Dette kan inkludere energieffektiviseringstiltak som grunnvarme, fjernvarme, 
                 solceller, varmepumper, oppgradering av byginngsmasse samt kombinasjoner av disse.""")
+        st.info("I referansesituasjonen er byggene definert som TEK10-TEK17 bygg for å beregne energibehovet i PROFet (nye bygg)")
         selected_scenario_name = select_scenario()
         show_scenarios = st.checkbox("Vis scenario på kart", value = False)
         if show_scenarios == True:
