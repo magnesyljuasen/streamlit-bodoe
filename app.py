@@ -762,6 +762,13 @@ def duration_curve_plot():
 
 start_time = time.time()
 streamlit_settings(title="Energy Plan Zero, Bodø", icon="h")
+
+st.title('Energiløsninger Bodø')
+st.header('Innledning ')
+st.write('Bodø kommune skal ...')
+
+st.header('Energibehov for bygningsmassen')
+st.write('Se energibehov under')
 with st.sidebar:
     #c1, c2 = st.columns([1,1])
     st.image('src/img/bodø-av.png', use_column_width = "auto")
@@ -938,3 +945,7 @@ my_bar.progress(100, text="Fullført")
 end_time = time.time()
 #with st.sidebar:
 #    st.title(f"Tidsbruk: {round((end_time - start_time),2)} sekunder")
+
+st.header('Energiforsyningstiltak')
+
+st.header('Oppsummering')
